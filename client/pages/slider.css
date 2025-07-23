@@ -1,0 +1,32 @@
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #22d3ee;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px #22d3ee;
+}
+
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #22d3ee;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px #22d3ee;
+}
+
+.slider::-webkit-slider-track {
+  background: #22d3ee;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.slider::-moz-range-track {
+  background: #22d3ee;
+  height: 4px;
+  border-radius: 2px;
+}
