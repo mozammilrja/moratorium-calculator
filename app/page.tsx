@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from "react";
-import "./slider.css";
+// import "./slider.css";
 
 export default function Index() {
   const [loanAmount, setLoanAmount] = useState(1500000);
@@ -123,8 +125,7 @@ export default function Index() {
                   compoundOption === "after"
                     ? "bg-cyan-400 text-white"
                     : "bg-gray-600 text-gray-300"
-                }`}
-              >
+                }`}>
                 After Moratorium Period
               </button>
               <button
@@ -133,8 +134,7 @@ export default function Index() {
                   compoundOption === "monthly"
                     ? "bg-cyan-400 text-white"
                     : "bg-gray-600 text-gray-300"
-                }`}
-              >
+                }`}>
                 Monthly (Like Credit Cards)
               </button>
             </div>
@@ -154,8 +154,7 @@ export default function Index() {
                     moratoriumMonths === months
                       ? "bg-cyan-400 text-white"
                       : "bg-white text-gray-800"
-                  }`}
-                >
+                  }`}>
                   {months === 0 ? "Not Availed" : months}
                 </button>
               ))}
@@ -183,8 +182,7 @@ export default function Index() {
           <div className="flex flex-col items-center space-y-2">
             <button
               onClick={calculateInterest}
-              className="w-full sm:w-[250px] h-10 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-[12px] text-sm transition-colors"
-            >
+              className="w-full sm:w-[250px] h-10 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-[12px] text-sm transition-colors">
               CALCULATE
             </button>
             <div className="text-center text-gray-400 text-xs sm:text-sm">
